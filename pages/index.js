@@ -3,11 +3,14 @@ import Nav from '@/components/Nav'
 import Results from '@/components/Results'
 import requests from '@/utils/requests'
 import Head from 'next/head'
-
+import { useRecoilValue } from 'recoil'
+import { modalState, movieState } from '@/atoms/modalAtom'
+import Mode from '@/components/Mode'
 
 
 
 export default function Home({results}) {
+  const showModal = useRecoilValue(modalState)
   
   return (
     <div>
@@ -21,6 +24,8 @@ export default function Home({results}) {
      <Nav/>
       {/* Results */}
     <Results results={results} />
+    {showModal && <Mode />}
+   
       </div>
   )
 }

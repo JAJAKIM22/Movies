@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@heroicons/react": "v1",
+    "@mui/material": "^5.11.10",
     "@next/font": "13.1.6",
     "firebase": "^9.17.1",
     "next": "13.1.6",
@@ -17,7 +20,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-flip-move": "^3.0.5",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "react-icons": "^4.7.1",
+    "react-player": "^2.11.2",
+    "recoil": "^0.7.6",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "valtio": "^1.10.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
